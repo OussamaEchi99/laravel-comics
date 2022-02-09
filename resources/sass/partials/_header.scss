@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    margin: 20px 0;
+
+    img{
+        width: auto;
+    }
+}
+
+.nav{
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100%;
+
+        li{
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &.current {
+                border-bottom: 5px solid $brand_primary_color;
+                a{
+                    color: $brand_primary_color;
+                }
+            }
+
+            &:hover {
+                border-bottom: 5px solid $brand_primary_color;
+                a{
+                    color: $brand_primary_color;
+                }
+            }
+
+            a{
+                color: #464646;
+            }
+        }
+    }
+}
