@@ -50,3 +50,93 @@ Route::get('/comic/{id}', function ($id) {
 
     return view('comic', $data);
 })->name('comic');
+
+Route::get('/characters', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('characters', $data);
+})->name('characters');
+
+Route::get('/movies', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('movies', $data);
+})->name('movies');
+
+Route::get('/tv', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('tv', $data);
+})->name('tv');
+
+Route::get('/games', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('games', $data);
+})->name('games');
+
+Route::get('/collectibles', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('collectibles', $data);
+})->name('collectibles');
+
+Route::get('/videos', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('videos', $data);
+})->name('videos');
+
+Route::get('/fans', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('fans', $data);
+})->name('fans');
+
+Route::get('/news', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('news', $data);
+})->name('news');
+
+Route::get('/shop', function () {
+    $header_links = config('header_links');
+
+    $data = [
+        'header_links' => $header_links,
+    ];
+
+    return view('shop', $data);
+})->name('shop');

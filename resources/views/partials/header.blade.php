@@ -6,8 +6,8 @@
         <div class="nav">
             <ul>
                 @foreach ($header_links as $header_link)
-                    <li>
-                        <a href="{{ $header_link['url'] }}">{{ $header_link['text'] }}</a>
+                    <li class="{{ Request::route()->getName() === $header_link['url'] ? 'current' : '' }}">
+                        <a href="{{ route($header_link['url']) }}">{{ $header_link['text'] }}</a>
                     </li>
                 @endforeach
             </ul>
