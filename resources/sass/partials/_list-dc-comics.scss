@@ -1,0 +1,19 @@
+.product_list{
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+
+        .load_more{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a{
+            color: white;
+            background-color: $brand_primary_color;
+            padding: 10px 70px;
+            }
+        }
+    }
+}

@@ -5,23 +5,17 @@ DC Comics
 @endsection
 
 @section('main_content')
-    <section>
+    <section class="comics_section">
         <div class="container">
 
-            {{-- @include('components.products-list', [
-                'title' => 'Le lunghe',
-                'pasta_array' => $paste_lunghe
+            @include('components.list-dc-comics', [
+                'title' => 'Comics',
+                'comics_array' => $comics
             ])
 
-            @include('components.products-list', [
-                'title' => 'Le corte',
-                'pasta_array' => $paste_corte
+            @include('components.pre-footer', [
+                'prefooter_links' => $prefooter_links
             ])
-
-            @include('components.products-list', [
-                'title' => 'Le cortissime',
-                'pasta_array' => $paste_cortissime
-            ]) --}}
 
         </div>
     </section>

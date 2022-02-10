@@ -1,0 +1,29 @@
+.pre_footer{
+    height: 150px;
+    background-color: $brand_primary_color;
+    .container{
+        height: 100%;
+        
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    
+       img{
+            max-width: 50%;
+            display: flex;
+       }
+    }
+}
+

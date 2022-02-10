@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  margin: 20px 0;
+}
+
+.image img {
+  width: auto;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+
+.nav ul li {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav ul li.current {
+  border-bottom: 5px solid #0282f9;
+}
+
+.nav ul li.current a {
+  color: #0282f9;
+}
+
+.nav ul li:hover {
+  border-bottom: 5px solid #0282f9;
+}
+
+.nav ul li:hover a {
+  color: #0282f9;
+}
+
+.nav ul li a {
+  color: #464646;
+}
+
+.comics_section {
+  background-color: #1c1c1c;
+  padding-top: 50px;
+}
+
+.product_list .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_list .list .load_more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product_list .list .load_more a {
+  color: white;
+  background-color: #0282f9;
+  padding: 10px 70px;
+}
+
+.product {
+  width: 16.6666666667%;
+  display: block;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.product .image {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.product .image img {
+  width: auto;
+}
+
